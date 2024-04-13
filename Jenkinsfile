@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image from a Java file
-                    bat 'docker build -t my-java-app .'
+                    bat 'docker build -t my-javaapp .'
                 }
             }
         }
@@ -29,9 +29,9 @@ pipeline {
             steps {
                 script {
                     	
-                   	bat 'docker run -d --name my-java-container my-java-app'
+                   	bat 'docker run -d --name my-javacontainer my-javaapp'
                    
-			bat 'docker logs my-java-container'
+			bat 'docker logs my-javacontainer'
                 }
             }
         }
