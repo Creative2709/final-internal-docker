@@ -4,7 +4,7 @@ pipeline {
 	stage('Checkout'){
 		steps{
 			script{
-				git branch: 'main', url: 'https://github.com/Creative2709/Task-7.git'
+				git branch: 'main', url: 'https://github.com/Creative2709/final-internal-docker.git'
 			}
 		}
 	}
